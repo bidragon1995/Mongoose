@@ -1,0 +1,18 @@
+html
+html 
+    head
+        title Form Data 
+    body 
+        form(action = "/update-avatar", method = "POST", enctype="multipart/form-data")
+            div 
+                label(for = "say") Say: 
+                input(name = "say" value = "Hi")
+            br
+            div
+                label(for = "to") To: 
+                input(name = "to" value = "Express Form")
+                br
+                label(for = "avatar") Avatar: 
+                input(name = "avatar"  type="file" accept="image/*")
+                br
+                button(type = "Submit") Send My Greetings

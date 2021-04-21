@@ -6,12 +6,16 @@ app.use(bodyParser.urlencoded({
    extended: false
 }));
 
+app.use(function(req,res,next){
+    console.log(req.url);
+    next();
+});
 
 app.set('view engine', 'pug');
 app.set('views', './views');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017');
+mongoose.connect('mongodb://localhost:27017/mongoose');
 
 console.log('mongoose server running...!');
 

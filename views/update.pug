@@ -1,8 +1,12 @@
 html
 head
-   title Person
+   title Update by ID
    body
-      form(action = "/person", method = "POST")
+      form(action = "/update", method = "POST")
+         div
+            label(for = "id") ID: 
+            input(name = "id")
+         br
          div
             label(for = "name") Name: 
             input(name = "name")
@@ -15,4 +19,5 @@ head
             label(for = "nationality") Nationality: 
             input(name = "nationality")
          br
-         button(type = "submit") Create new person
+         button(type = "submit") Update this person
+         

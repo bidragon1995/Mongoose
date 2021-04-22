@@ -1,11 +1,11 @@
 html 
     head 
-        title Mongoose 
+        title Person
     body 
         if(type == "error")
             h3(style = "color: red") #{message}
         else
-            h3 New person added :
+            h3 #{message} :
              p name: #{person.name},
              p age: #{person.age} and 
              p nationality: #{person.nationality}
